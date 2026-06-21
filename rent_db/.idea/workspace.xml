@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44bdb9a4-ef85-44e7-84ff-cc5fec72d435" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/rent_db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/RentDbApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/RentDbApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/dto/CarDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/dto/CarDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/dto/CarRespDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/dto/CarPagingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/enums/Reservation_Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/enums/Reservation_Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/enums/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/mapper/CarMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/mapper/CarMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/java/com/rent_db/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rent_db/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rent_db/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Exception" />
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3EG9XM8iNTEL1GgWQt14ER38uqs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AgentServiceTest.addAgents_mustSaveAndReturnCategory.executor": "Run",
+    "JUnit.AgentServiceTest.deleteAgent_mustDeleteAndReturnNothing.executor": "Run",
+    "JUnit.AgentServiceTest.executor": "Run",
+    "JUnit.AgentServiceTest.getAllAgents_MustReturnSomething.executor": "Run",
+    "JUnit.AgentServiceTest.getAllAgents_ReturnsEmptyList.executor": "Run",
+    "JUnit.AgentServiceTest.getById_agentDoesNotExist.executor": "Run",
+    "JUnit.AgentServiceTest.getById_agentsExists.executor": "Run",
+    "JUnit.CarServiceTest.addCar_mustSaveAndReturnCategory.executor": "Run",
+    "JUnit.CarServiceTest.deleteCar_mustDeleteAndReturnNothing.executor": "Run",
+    "JUnit.CarServiceTest.executor": "Run",
+    "JUnit.CarServiceTest.getAllCars_MustReturnSomething.executor": "Run",
+    "JUnit.CarServiceTest.getAllCars_ReturnsEmptyList.executor": "Run",
+    "JUnit.CarServiceTest.getById_carDoesNotExist.executor": "Run",
+    "JUnit.CarServiceTest.getById_carExists.executor": "Run",
+    "JUnit.DashBoardServiceTest.executor": "Run",
+    "JUnit.DashBoardServiceTest.getStats_mustReturnDashboardStats.executor": "Run",
+    "JUnit.DashBoardServiceTest.getStats_mustReturnEmptyStats.executor": "Run",
+    "JUnit.RentDbApplicationTests.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.RentDbApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/GIT/rent_db",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.RentDbApplication">
+    <configuration name="AgentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rent_db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rent_db.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rent_db.service" />
+      <option name="MAIN_CLASS_NAME" value="com.rent_db.service.AgentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgentServiceTest.getAllAgents_MustReturnSomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rent_db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rent_db.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rent_db.service" />
+      <option name="MAIN_CLASS_NAME" value="com.rent_db.service.AgentServiceTest" />
+      <option name="METHOD_NAME" value="getAllAgents_MustReturnSomething" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rent_db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rent_db.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rent_db.service" />
+      <option name="MAIN_CLASS_NAME" value="com.rent_db.service.CarServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashBoardServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rent_db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rent_db.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rent_db.service" />
+      <option name="MAIN_CLASS_NAME" value="com.rent_db.service.DashBoardServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RentDbApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rent_db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rent_db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rent_db" />
+      <option name="MAIN_CLASS_NAME" value="com.rent_db.RentDbApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RentDbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="rent_db" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rent_db.RentDbApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RentDbApplicationTests" />
+        <item itemvalue="JUnit.AgentServiceTest.getAllAgents_MustReturnSomething" />
+        <item itemvalue="JUnit.AgentServiceTest" />
+        <item itemvalue="JUnit.DashBoardServiceTest" />
+        <item itemvalue="JUnit.CarServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44bdb9a4-ef85-44e7-84ff-cc5fec72d435" name="Changes" comment="" />
+      <created>1779794078308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779794078308</updated>
+      <workItem from="1779794079805" duration="2304000" />
+      <workItem from="1779847611693" duration="5637000" />
+      <workItem from="1779947884998" duration="19559000" />
+      <workItem from="1780028639728" duration="20000" />
+      <workItem from="1780052188248" duration="4151000" />
+      <workItem from="1780108292812" duration="4450000" />
+      <workItem from="1780156480969" duration="4460000" />
+      <workItem from="1780203899382" duration="19213000" />
+      <workItem from="1780289349494" duration="7812000" />
+      <workItem from="1780324125001" duration="17933000" />
+      <workItem from="1780371895751" duration="26690000" />
+      <workItem from="1780451777120" duration="11682000" />
+      <workItem from="1780582873931" duration="5817000" />
+      <workItem from="1780632488194" duration="1246000" />
+      <workItem from="1780834010749" duration="8407000" />
+      <workItem from="1780928228774" duration="10093000" />
+      <workItem from="1781021642036" duration="1613000" />
+      <workItem from="1781061165711" duration="8000" />
+      <workItem from="1781062176079" duration="631000" />
+      <workItem from="1781090094973" duration="10011000" />
+      <workItem from="1781156696544" duration="274000" />
+      <workItem from="1781157003444" duration="1285000" />
+      <workItem from="1781185050719" duration="1487000" />
+      <workItem from="1781239263541" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

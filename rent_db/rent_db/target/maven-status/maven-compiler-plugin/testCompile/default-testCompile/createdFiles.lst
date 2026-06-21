@@ -1,0 +1,4 @@
+com\rent_db\service\DashBoardServiceTest.class
+com\rent_db\RentDbApplicationTests.class
+com\rent_db\service\AgentServiceTest.class
+com\rent_db\service\CarServiceTest.class
