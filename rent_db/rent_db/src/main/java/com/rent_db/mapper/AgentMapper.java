@@ -13,7 +13,10 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 
 public class AgentMapper {
-    public static AgentRespDto MapEntityToDto(RentalAgent agent) {
+    private AgentMapper(){
+
+    }
+    public static AgentRespDto mapEntityToDtoo(RentalAgent agent) {
         return new AgentRespDto(
                 agent.getId(),
                 agent.getName(),

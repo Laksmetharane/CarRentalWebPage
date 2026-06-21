@@ -4,11 +4,9 @@ import com.rent_db.dto.*;
 import com.rent_db.enums.Availability;
 import com.rent_db.enums.Reservation_Status;
 import com.rent_db.exception.ResourceNotFoundException;
-import com.rent_db.mapper.AgentMapper;
 import com.rent_db.mapper.ReserveMapper;
 import com.rent_db.model.*;
 import com.rent_db.repository.ReserveRepository;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -32,8 +30,8 @@ public class ReserveService {
     public ReservePagingDto getAll(int page,int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<Reservation>pages = reserveRepository.findAll(pageable);
-        List<ReserveAllRespDto>list= pages.stream().map(ReserveMapper::mapEntityTodto).toList();
-        return ReserveMapper.MapEntityToDto(list,pages);
+        List<ReserveAllRespDto>list= pages.stream().map(ReserveMapper::mapEntityTooDto).toList();
+        return ReserveMapper.mapEntityToDtoo(list,pages);
     }
 
     public Reservation getById(int id) {
@@ -46,8 +44,8 @@ public class ReserveService {
         int agent_id = rentalAgent.getId();
         Pageable pageable = PageRequest.of(page,size);
         Page<Reservation>pages = reserveRepository.getByStatus(reservationStatus,agent_id,pageable);
-        List<ReserveAllRespDto> list = pages.stream().map(ReserveMapper::mapEntityTodto).toList();
-        return ReserveMapper.MapEntityToDto(list,pages);
+        List<ReserveAllRespDto> list = pages.stream().map(ReserveMapper::mapEntityTooDto).toList();
+        return ReserveMapper.mapEntityToDtoo(list,pages);
     }
 
 
@@ -101,14 +99,14 @@ public class ReserveService {
 
     public List<ReserveAllRespDto> getReservationByCustomer(String customerUsername) {
         List<Reservation>list = reserveRepository.getReservationByCustomer(customerUsername);
-        return list.stream().map(ReserveMapper:: mapEntityTodto).toList();
+        return list.stream().map(ReserveMapper:: mapEntityTooDto).toList();
     }
 
     public ReservePagingDto getReservationByAgent(String Username, int page, int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<Reservation>pages = reserveRepository.getReservationByAgent(Username,pageable);
-        List<ReserveAllRespDto>list = pages.stream().map(ReserveMapper::mapEntityTodto).toList();
-        return ReserveMapper.MapEntityToDto(list,pages);
+        List<ReserveAllRespDto>list = pages.stream().map(ReserveMapper::mapEntityTooDto).toList();
+        return ReserveMapper.mapEntityToDtoo(list,pages);
     }
 
 
@@ -119,15 +117,15 @@ public class ReserveService {
         reserveRepository.save(reservation);
     }
 
-    public void addMileage_fuel_status(String username, milleage_fuelDto dto){
+    public void addMileageFuelStatus(String username, mileageFuelDto dto){
         Reservation reservation = reserveRepository.getReservationByAgent(username);
-        reservation = ReserveMapper.Mapmilleage(reservation,dto);
+        reservation = ReserveMapper.mapMileage(reservation,dto);
         reservation.setReservation_status(Reservation_Status.CONFIRMED);
         reserveRepository.save(reservation);
     }
 
 
-    public double calculateExtraAmount(int id,milleage_fuelDto dto) {
+    public double calculateExtraAmount(int id, mileageFuelDto dto) {
         Reservation reservation = reserveRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Invalid id"));
         reservation.setReturnMileage(dto.returnMileage());
         reservation.setFuelReturnedFull(dto.fuelReturnedFull());

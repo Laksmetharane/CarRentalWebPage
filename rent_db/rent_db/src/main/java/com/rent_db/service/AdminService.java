@@ -62,7 +62,7 @@ public class AdminService {
 
     public AdminRespDto getByAdmin(String username) {
         Admin admin = getByUsername(username);
-        return adminMapper.MapEntityToDto(admin);
+        return adminMapper.mapEntityToDtoo(admin);
     }
 
     public Admin updateAdmin(String username, AdminDto adminDto) {
@@ -88,7 +88,7 @@ public class AdminService {
     public AdminPageRespDto getAllAdminByPagination(int page, int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<Admin> pages = adminRepository.findAll(pageable);
-        List<AdminRespDto>list = pages.stream().map(adminMapper::MapEntityToDto).toList();
+        List<AdminRespDto>list = pages.stream().map(adminMapper::mapEntityToDtoo).toList();
         return adminMapper.mapEntityToDto(list,pages);
     }
 }

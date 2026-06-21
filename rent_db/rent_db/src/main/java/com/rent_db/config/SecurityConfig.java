@@ -25,20 +25,6 @@ import static org.apache.tomcat.util.http.Method.PUT;
 @EnableWebSecurity
 @AllArgsConstructor
 public class SecurityConfig {
-//    @Bean
-//    public UserDetailsService users() {
-//        UserDetails customer = User.builder()
-//                .username("john_doe")
-//                .password("{noop}cust123")
-//                .roles("CUSTOMER")
-//                .build();
-//        UserDetails admin = User.builder()
-//                .username("admin_01")
-//                .password("{noop}admin123")
-//                .roles("ADMIN")
-//                .build();
-//        return new InMemoryUserDetailsManager(customer, admin);
-//    }
     private final UserService userService;
     private JwtFilter jwtFilter;
 

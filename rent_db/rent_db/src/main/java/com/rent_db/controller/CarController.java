@@ -49,8 +49,8 @@ public class CarController {
     }
 
     @GetMapping("/search")
-    public CarPagingDto SearchCarsByModel(@RequestParam String model,@RequestParam int page, @RequestParam  int size){
-        return carService.SearchCarsByModel(model,page,size);
+    public CarPagingDto Search_Cars_By_Model(@RequestParam String model,@RequestParam int page, @RequestParam  int size){
+        return carService.Search_Cars_By_Model(model,page,size);
     }
 
     //get using Car Availability
@@ -68,8 +68,8 @@ public class CarController {
     //to Add new car
     @PostMapping ("/add")
     public void addCar(@Valid @RequestBody CarReqDto dto, Principal principal){
-        String AdminUsername = principal.getName();
-        carService.addCar(dto,AdminUsername);
+        String Admin_Username = principal.getName();
+        carService.addCar(dto,Admin_Username);
     }
 
     // to delete

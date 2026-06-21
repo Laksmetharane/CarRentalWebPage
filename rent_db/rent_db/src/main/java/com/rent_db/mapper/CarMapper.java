@@ -35,7 +35,7 @@ public class CarMapper {
         );
     }
 
-    public CarwithoutPagingDto mapEntityTopagesDto(List<CarwithoutDto> list, Page<Car> pages){
+    public CarwithoutPagingDto mapEntityToPagesDtoo(List<CarwithoutDto> list, Page<Car> pages){
         return new CarwithoutPagingDto(
                 pages.getTotalElements(),
                 pages.getTotalPages(),
@@ -51,7 +51,7 @@ public class CarMapper {
     }
 
 
-    public CarwithoutDto mapentityDto(Car car,List<ReviewRespDto>reviews) {
+    public CarwithoutDto mapEntityDtoo(Car car,List<ReviewRespDto>reviews) {
         return new CarwithoutDto(
                 car.getModel(),
                 car.getId(),

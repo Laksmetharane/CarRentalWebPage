@@ -69,7 +69,7 @@ public class PaymentService {
         Pageable pageable = PageRequest.of(page,size);
         Page<Payment> pages = paymentRepository.findAll(pageable);
         List<PaymentRespDto>list = pages.stream().map(paymentMapper::mapToDto).toList();
-        return paymentMapper.MapToDto(list,pages);
+        return paymentMapper.mapToDtoo(list,pages);
     }
 
 

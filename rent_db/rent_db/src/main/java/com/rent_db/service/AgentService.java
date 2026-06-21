@@ -42,7 +42,7 @@ public class AgentService {
     public AgentPagingDto getAllAgentByPagination(int page, int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<RentalAgent> pages = agentRepository.getAllActive(true,pageable);
-        List<AgentRespDto>list = pages.stream().map(AgentMapper::MapEntityToDto).toList();
+        List<AgentRespDto>list = pages.stream().map(AgentMapper::mapEntityToDtoo).toList();
         return AgentMapper.mapEntityToDto(list,pages);
     }
 
@@ -85,7 +85,7 @@ public class AgentService {
 
     public AgentRespDto getByAgent(String username) {
         RentalAgent agent = getByUsername(username);
-        return AgentMapper.MapEntityToDto(agent);
+        return AgentMapper.mapEntityToDtoo(agent);
     }
 
     public RentalAgent getByUsername(String username) {

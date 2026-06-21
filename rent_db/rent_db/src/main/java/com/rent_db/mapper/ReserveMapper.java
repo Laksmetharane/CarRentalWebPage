@@ -34,7 +34,7 @@ public class ReserveMapper {
         return existing;
     }
 
-    public static ReservePagingDto MapEntityToDto(List<ReserveAllRespDto> list, Page<Reservation> pages) {
+    public static ReservePagingDto mapEntityToDtoo(List<ReserveAllRespDto> list, Page<Reservation> pages) {
         return new ReservePagingDto(
                 pages.getTotalElements(),
                 pages.getTotalPages(),
@@ -42,7 +42,7 @@ public class ReserveMapper {
         );
     }
 
-    public static ReserveAllRespDto mapEntityToDto(Reservation reservation,int agent_id) {
+    public static ReserveAllRespDto mapEntityToDto(Reservation reservation,int agentId) {
        return new ReserveAllRespDto(
         reservation.getId(),
         reservation.getLocation(),
@@ -58,9 +58,9 @@ public class ReserveMapper {
         reservation.getCustomer().getUser().getUsername(), reservation.getCustomer().getUser().getRole(),
         reservation.getTotalAmount(),
         reservation.getExtraAmount(),
-        agent_id, reservation.isPaymentRequested());
+        agentId, reservation.isPaymentRequested());
     }
-    public static ReserveAllRespDto mapEntityTodto(Reservation reservation) {
+    public static ReserveAllRespDto mapEntityTooDto(Reservation reservation) {
         return new ReserveAllRespDto(
                 reservation.getId(),
                 reservation.getLocation(),
@@ -80,7 +80,7 @@ public class ReserveMapper {
                 reservation.isPaymentRequested());
     }
 
-    public static Reservation Mapmilleage(Reservation reservation,milleage_fuelDto dto) {
+    public static Reservation mapMileage(Reservation reservation, mileageFuelDto dto) {
         reservation.setReturnMileage(dto.returnMileage());
         reservation.setFuelReturnedFull(dto.fuelReturnedFull());
         return reservation;

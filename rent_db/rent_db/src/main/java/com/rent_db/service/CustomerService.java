@@ -38,13 +38,13 @@ public class CustomerService {
     public CustomerPagingDto getAll(int page,int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<Customer> pages = customerRepository.getAllActive(true,pageable);
-        List<CustomerRespDto> list = pages.stream().map(customerMapper::MapEntityToDto).toList();
+        List<CustomerRespDto> list = pages.stream().map(customerMapper::mapEntityToDtoo).toList();
         return customerMapper.mapEntityToDto(list,pages);
     }
 
     public CustomerRespDto getByCustomer(String username) {
         Customer customer = getByUsername(username);
-        return customerMapper.MapEntityToDto(customer);
+        return customerMapper.mapEntityToDtoo(customer);
     }
 
     public Customer getCustomerById(int id) {
@@ -54,12 +54,12 @@ public class CustomerService {
 
     public CustomerRespDto getByCustomerName(String name) {
         Customer customer = customerRepository.findByName(name);
-        return customerMapper.MapEntityToDto(customer);
+        return customerMapper.mapEntityToDtoo(customer);
     }
 
     public CustomerRespDto getByDlNo(int dlNo) {
         Customer customer = customerRepository.findByDlNo(dlNo);
-        return customerMapper.MapEntityToDto(customer);
+        return customerMapper.mapEntityToDtoo(customer);
     }
 
     public void addCustomer(CustomerReqDto customerReqDto) {
@@ -112,7 +112,7 @@ public class CustomerService {
     public CustomerPagingDto getCustomerByAdmin(String adminUsername,int page,int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<Customer>pages = customerRepository.getCustomerByAdmin(adminUsername,pageable);
-        List<CustomerRespDto>list = pages.stream().map(customerMapper::MapEntityToDto).toList();
+        List<CustomerRespDto>list = pages.stream().map(customerMapper::mapEntityToDtoo).toList();
         return customerMapper.mapEntityToDto(list,pages);
     }
 

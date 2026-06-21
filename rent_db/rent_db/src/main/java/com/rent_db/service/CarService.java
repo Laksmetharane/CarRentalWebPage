@@ -89,10 +89,10 @@ public class CarService {
         Page<Car> pages = carRepository.getAllActive(true,pageable);
         List<CarwithoutDto>list = pages.stream().map(car-> {
             List<ReviewRespDto> reviews = reviewRepository.findByCarId(car.getId()).stream().map(reviewMapper::mapEntityToDto).toList();
-            return carMapper.mapentityDto(car, reviews);
+            return carMapper.mapEntityDtoo(car, reviews);
         }).toList();
 
-        return carMapper.mapEntityTopagesDto(list, pages);
+        return carMapper.mapEntityToPagesDtoo(list, pages);
     }
 
     public CarPagingDto getByAvailability(Availability availability,int page,int size) {
@@ -117,7 +117,7 @@ public class CarService {
         carRepository.save(car);
     }
 
-    public CarPagingDto SearchCarsByModel(String model, int page, int size) {
+    public CarPagingDto Search_Cars_By_Model(String model, int page, int size) {
         Pageable pageable = PageRequest.of(page,size);
         Page<Car> pages = carRepository.findByModelContaining(model,pageable);
         List<CarDto>list = pages.stream().map(carMapper::mapEntityDto).toList();

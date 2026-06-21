@@ -4,7 +4,6 @@ import com.rent_db.dto.*;
 import com.rent_db.enums.Reservation_Status;
 import com.rent_db.model.Reservation;
 import com.rent_db.service.ReserveService;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,15 +28,15 @@ public class ReserveController {
     }
 
     @GetMapping("/getByStatus")
-    public ReservePagingDto getByStatus(Principal principal,@RequestParam Reservation_Status reservation_status,@RequestParam int page,@RequestParam int size){
+    public ReservePagingDto getByStatus(Principal principal,@RequestParam Reservation_Status reservationStatus,@RequestParam int page,@RequestParam int size){
         String username = principal.getName();
-        return reserveService.getByStatus(username,reservation_status,page,size);
+        return reserveService.getByStatus(username,reservationStatus,page,size);
     }
 
     @PostMapping("/add")
     public void addReservation(@RequestBody ReserveReqDto reserveReqDto, Principal principal){
-        String Username = principal.getName();
-        reserveService.addReservation(reserveReqDto,Username);
+        String UserName = principal.getName();
+        reserveService.addReservation(reserveReqDto,UserName);
     }
 
     @PutMapping("/update/{id}")
@@ -54,13 +53,6 @@ public class ReserveController {
         reserveService.deleteReservation(id);
         return ResponseEntity.ok("Reservation deleted successfully");
     }
-
-//    @GetMapping("/all/for-customer")
-//    public ReservePagingDto getReservationByCustomer(Principal principal,@RequestParam(defaultValue="0",required=false)int page,
-//                                                        @RequestParam(defaultValue="10",required=false)int size){
-//        String customerUsername = principal.getName();
-//        return reserveService.getReservationByCustomer(customerUsername,page,size);
-//    }
 
     @GetMapping("/all/for-customer")
     public List<ReserveAllRespDto> getReservationByCustomer(Principal principal){
@@ -81,13 +73,13 @@ public class ReserveController {
     }
 
     @PostMapping("/accepts_reservation")
-    public void addMileage_fuel_status(Principal principal,@RequestBody milleage_fuelDto  dto){
+    public void addMileageFuelStatus(Principal principal,@RequestBody mileageFuelDto dto){
         String username = principal.getName();
-        reserveService.addMileage_fuel_status(username,dto);
+        reserveService.addMileageFuelStatus(username,dto);
     }
 
     @PostMapping("/getOverallAmount/{id}")//calculated by the rental agent
-    public double calculateExtraAmount(@PathVariable int id,@RequestBody milleage_fuelDto dto){
+    public double calculateExtraAmount(@PathVariable int id,@RequestBody mileageFuelDto dto){
 
         return reserveService.calculateExtraAmount(id,dto);
     }

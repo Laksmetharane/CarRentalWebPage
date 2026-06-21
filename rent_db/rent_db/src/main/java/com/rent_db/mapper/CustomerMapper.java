@@ -10,7 +10,7 @@ import java.util.List;
 
 @Component
 public class CustomerMapper {
-    public CustomerRespDto MapEntityToDto(Customer customer) {
+    public CustomerRespDto mapEntityToDtoo(Customer customer) {
         return new CustomerRespDto(
                 customer.getId(),
                 customer.getName(),

@@ -35,8 +35,8 @@ public class CustomerController {
     }
 
     @GetMapping("/getBydl_No")
-    public ResponseEntity<CustomerRespDto>getByDlNo(@RequestParam int dl_no){
-        return ResponseEntity.ok(customerService.getByDlNo(dl_no));
+    public ResponseEntity<CustomerRespDto>getByDlNo(@RequestParam int dlNo){
+        return ResponseEntity.ok(customerService.getByDlNo(dlNo));
     }
 
     @GetMapping("/all/for-admin")

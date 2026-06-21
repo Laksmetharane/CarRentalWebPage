@@ -23,7 +23,7 @@ public class PaymentMapper {
     }
 
 
-    public PaymentPagingDto MapToDto(List<PaymentRespDto> list, Page<Payment> pages) {
+    public PaymentPagingDto mapToDtoo(List<PaymentRespDto> list, Page<Payment> pages) {
         return new PaymentPagingDto(
                 pages.getTotalElements(),
                 pages.getTotalPages(),

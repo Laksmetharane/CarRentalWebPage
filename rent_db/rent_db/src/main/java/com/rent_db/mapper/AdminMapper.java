@@ -10,7 +10,7 @@ import java.util.List;
 
 @Component
 public class AdminMapper {
-    public AdminRespDto MapEntityToDto(Admin admin) {
+    public AdminRespDto mapEntityToDtoo(Admin admin) {
         return new AdminRespDto(
                 admin.getId(),
                 admin.getAge(),

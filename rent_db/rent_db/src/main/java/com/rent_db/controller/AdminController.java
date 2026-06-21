@@ -42,9 +42,6 @@ public class AdminController {
         return adminService.getByAdmin(username);
     }
 
-//    public Admin getAdminById(int id){
-//        return adminService.getAdminById(id);
-//    }
 
     @PutMapping("/update")
     public Admin updateAdmin(Principal principal,

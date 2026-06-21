@@ -1,6 +1,6 @@
 package com.rent_db.dto;
 
-public record milleage_fuelDto(
+public record mileageFuelDto(
         int returnMileage,
         boolean fuelReturnedFull
 ) {
